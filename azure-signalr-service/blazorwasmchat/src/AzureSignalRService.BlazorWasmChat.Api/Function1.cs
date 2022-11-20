@@ -10,7 +10,7 @@ namespace AzureSignalRService.BlazorWasmChat.Api
     {
         [FunctionName("negotiate")]
         public static SignalRConnectionInfo Negotiate(
-            [HttpTrigger(AuthorizationLevel.Anonymous)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
             [SignalRConnectionInfo(HubName = "chat")] SignalRConnectionInfo connectionInfo)
         {
             return connectionInfo;
@@ -18,7 +18,7 @@ namespace AzureSignalRService.BlazorWasmChat.Api
 
         [FunctionName("sendMessage")]
         public static async Task SendMessage(
-            [HttpTrigger(AuthorizationLevel.Anonymous, methods: new[] { "post" })] HttpRequest request,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest request,
             [SignalR(HubName = "chat")] IAsyncCollector<SignalRMessage> signalRMessages)
         {
             var chatMessage = await request.ReadFromJsonAsync<ChatMessage>();

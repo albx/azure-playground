@@ -91,7 +91,7 @@ else
             _messages.Clear();
 
             // Create the chat client
-            _hubUrl = "http://localhost:7051/api/chat";
+            _hubUrl = "http://localhost:7051/api/";
 
             _hubConnection = new HubConnectionBuilder()
                 .WithUrl(_hubUrl)
