@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{993F6763-BEB5-408B-AA6A-764900F9B79C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignalRService.AzureFunctionDemo.Functions", "src\AzureSignalRService.AzureFunctionDemo.Functions\AzureSignalRService.AzureFunctionDemo.Functions.csproj", "{E5472A29-C17D-41D3-AB86-59DB3B2B2A32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5472A29-C17D-41D3-AB86-59DB3B2B2A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5472A29-C17D-41D3-AB86-59DB3B2B2A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5472A29-C17D-41D3-AB86-59DB3B2B2A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5472A29-C17D-41D3-AB86-59DB3B2B2A32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5472A29-C17D-41D3-AB86-59DB3B2B2A32} = {993F6763-BEB5-408B-AA6A-764900F9B79C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4658925A-A940-4EA1-B01E-DE59226509A1}
+	EndGlobalSection
+EndGlobal

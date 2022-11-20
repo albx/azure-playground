@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "AzureSignalRService.AzureFunctionDemo.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7075",
+      "launchBrowser": false
+    }
+  }
+}

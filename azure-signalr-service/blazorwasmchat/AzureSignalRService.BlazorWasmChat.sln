@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{720A14DA-4F6A-43BA-B5EC-EE1D395F85EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignalRService.BlazorWasmChat", "src\AzureSignalRService.BlazorWasmChat\AzureSignalRService.BlazorWasmChat.csproj", "{39A06B7E-238A-43F1-AC6E-098D9D68C5E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignalRService.BlazorWasmChat.Api", "src\AzureSignalRService.BlazorWasmChat.Api\AzureSignalRService.BlazorWasmChat.Api.csproj", "{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A06B7E-238A-43F1-AC6E-098D9D68C5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A06B7E-238A-43F1-AC6E-098D9D68C5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A06B7E-238A-43F1-AC6E-098D9D68C5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A06B7E-238A-43F1-AC6E-098D9D68C5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39A06B7E-238A-43F1-AC6E-098D9D68C5E1} = {720A14DA-4F6A-43BA-B5EC-EE1D395F85EA}
+		{A351474D-45AD-45BA-8DDE-EDCD3A66FCB6} = {720A14DA-4F6A-43BA-B5EC-EE1D395F85EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0954B16E-5F48-4586-BFC3-66AE8997C735}
+	EndGlobalSection
+EndGlobal
