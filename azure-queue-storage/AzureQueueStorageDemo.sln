@@ -3,20 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueStorageDemo.ConsoleApp", "AzureQueueStorageDemo.ConsoleApp\AzureQueueStorageDemo.ConsoleApp.csproj", "{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureQueueStorageDemo.ConsoleApp", "AzureQueueStorageDemo.ConsoleApp\AzureQueueStorageDemo.ConsoleApp.csproj", "{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureQueueStorage.Functions", "AzureQueueStorage.Functions\AzureQueueStorage.Functions.csproj", "{D7EA916C-81EB-4D03-9635-58549E34AA7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureQueueStorage.Messages", "AzureQueueStorage.Messages\AzureQueueStorage.Messages.csproj", "{2128FD07-3E07-48CB-8F8A-09737C356480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueStorage.BookManagement", "AzureQueueStorage.BookManagement\AzureQueueStorage.BookManagement.csproj", "{6903AA4F-9052-46B6-BB24-69E0B3D5F3AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6FB8502-9D5E-46C1-8F0D-BDAF6A77606A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EA916C-81EB-4D03-9635-58549E34AA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EA916C-81EB-4D03-9635-58549E34AA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EA916C-81EB-4D03-9635-58549E34AA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EA916C-81EB-4D03-9635-58549E34AA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2128FD07-3E07-48CB-8F8A-09737C356480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2128FD07-3E07-48CB-8F8A-09737C356480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2128FD07-3E07-48CB-8F8A-09737C356480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2128FD07-3E07-48CB-8F8A-09737C356480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6903AA4F-9052-46B6-BB24-69E0B3D5F3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6903AA4F-9052-46B6-BB24-69E0B3D5F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6903AA4F-9052-46B6-BB24-69E0B3D5F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6903AA4F-9052-46B6-BB24-69E0B3D5F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95A5DCC5-F739-41D3-9370-D794B9180638}
 	EndGlobalSection
 EndGlobal
