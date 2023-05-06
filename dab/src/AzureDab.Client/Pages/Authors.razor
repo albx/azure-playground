@@ -1,0 +1,32 @@
+﻿@page "/authors"
+
+@inject AuthorsService AuthorsService
+
+<h3>Authors</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in list.Value)
+        {
+            <tr>
+                <td>@author.FirstName</td>
+                <td>@author.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private AuthorList list = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        list = await AuthorsService.GetAuthorsAsync();
+    }
+}

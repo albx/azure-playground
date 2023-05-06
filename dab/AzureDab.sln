@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA47E094-BA6B-44D9-A030-EB9A75E21135}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDab.Client", "src\AzureDab.Client\AzureDab.Client.csproj", "{47A7D88D-3F8B-41EB-A993-A883A3ADA91E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47A7D88D-3F8B-41EB-A993-A883A3ADA91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A7D88D-3F8B-41EB-A993-A883A3ADA91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A7D88D-3F8B-41EB-A993-A883A3ADA91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A7D88D-3F8B-41EB-A993-A883A3ADA91E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47A7D88D-3F8B-41EB-A993-A883A3ADA91E} = {CA47E094-BA6B-44D9-A030-EB9A75E21135}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70F85190-AAFE-490D-93B3-8479CC6160CE}
+	EndGlobalSection
+EndGlobal

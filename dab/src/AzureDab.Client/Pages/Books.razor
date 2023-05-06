@@ -1,0 +1,42 @@
+﻿@page "/books"
+
+@inject BooksService BooksService
+
+<PageTitle>Azure DAB Sample - Books</PageTitle>
+
+<h3>Books</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Pages</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in list.Value)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Year</td>
+                <td>@book.Pages</td>
+                <td>
+                    <div class="btn-group">
+                        <a href="/books/@book.Id">Detail</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private BookList list = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        list = await BooksService.GetBooksAsync();
+    }
+}

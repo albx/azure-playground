@@ -1,0 +1,46 @@
+﻿@page "/books/{id:int}"
+
+@inject BooksService BooksService
+
+<h3>BookDetail</h3>
+
+<div class="mb-3">
+    <label>Title</label>
+    <p>@book.Title</p>
+</div>
+
+@if (series is not null)
+{
+    <div class="mb-3">
+        <label>Series</label>
+        <p>@series.Name</p>
+    </div>
+}
+
+<div class="mb-3">
+    <label>Year</label>
+    <p>@book.Year</p>
+</div>
+
+<div class="mb-3">
+    <label>Pages</label>
+    <p>@book.Pages</p>
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private BookList.BookItem book = new();
+
+    private SeriesList.SeriesItem? series = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        book = await BooksService.GetBookDetailAsync(Id);
+        if (book.SeriesId.HasValue)
+        {
+            series = await BooksService.GetSeriesDetailAsync(book.SeriesId.Value);
+        }
+    }
+}

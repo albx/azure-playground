@@ -1,0 +1,40 @@
+﻿@page "/author/new"
+
+@inject AuthorsService AuthorsService
+@inject NavigationManager NavigationManager
+
+<h3>CreateAuthor</h3>
+
+<EditForm Model="model" OnValidSubmit="SubmitAsync">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3">
+        <label>First name</label>
+        <InputText @bind-Value="model.FirstName" class="form-control" />
+        <ValidationMessage For="@(() => model.FirstName)" />
+    </div>
+
+    <div class="mb-3">
+        <label>Middle name</label>
+        <InputText @bind-Value="model.MiddleName" class="form-control" />
+        <ValidationMessage For="@(() => model.MiddleName)" />
+    </div>
+
+    <div class="mb-3">
+        <label>Last name</label>
+        <InputText @bind-Value="model.LastName" class="form-control" />
+        <ValidationMessage For="@(() => model.LastName)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create new</button>
+</EditForm>
+
+@code {
+    private CreateAuthorModel model = new();
+
+    private async Task SubmitAsync()
+    {
+        await AuthorsService.CreateNewAuthorAsync(model);
+        NavigationManager.NavigateTo("authors");
+    }
+}
